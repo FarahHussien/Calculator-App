@@ -1,2 +1,2 @@
 # Calculator-App
-This is my first project on github.
+The Simple Calculator App, built with Kotlin in Android Studio, offers users a user-friendly interface for basic arithmetic. Supporting addition, subtraction, multiplication, and division, the app allows users to input expressions via buttons or the keyboard, with dynamic updates. Key features include parentheses support, clear/backspace options, error handling, and a responsive UI. The Calculator class manages essential operations, uses stacks for operands and operators, and considers precedence during evaluation. The app's design prioritizes simplicity, providing users with an intuitive tool for quick and accurate calculations.
