@@ -39,14 +39,15 @@ class Calculator {
             val token = expression[i]
 
             when {
-                token.isDigit() -> {
+                token.isDigit() || token == '.' -> {
                     val sbuf = StringBuilder()
-                    while (i < expression.length && expression[i].isDigit()) {
+                    while (i < expression.length && (expression[i].isDigit() || expression[i] == '.')) {
                         sbuf.append(expression[i++])
                     }
                     stack.add(sbuf.toString().toDouble())
                     i--
                 }
+
                 token == ')' -> {
                     while (op.isNotEmpty() && op.last() != '(') {
                         performOperation()
